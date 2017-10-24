@@ -20,6 +20,7 @@ module.exports = {
     // 'tachyons-debug/css/tachyons-debug.min.css',
     '~/assets/main.css'
   ],
+  plugins: ['~/plugins/filters'],
   /*
   ** Build configuration
   */
