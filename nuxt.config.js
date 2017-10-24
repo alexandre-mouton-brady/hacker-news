@@ -28,6 +28,7 @@ module.exports = {
     vendor: ['axios']
   },
   mode: 'spa',
+  publicPath: 'https://alexandre-mouton-brady.github.io/hacker-news/_nuxt/',
   router: {
     linkExactActiveClass: 'link__active'
   }
