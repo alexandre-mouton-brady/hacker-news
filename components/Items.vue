@@ -9,7 +9,7 @@
              - <a class="f7" :href="item.url">{{ item.url | hostname }}</a>
           </template>
          </div>
-        <div class="details">by {{item.by}} - <span class="ma0 i f7">{{item.time | timeSince}} ago</span></div>
+        <div class="details">by <nuxt-link :to="'/user/' + item.by">{{item.by}}</nuxt-link> - <span class="ma0 i f7">{{item.time | timeSince}} ago</span></div>
         <div class="comments">{{item.descendants ? item.descendants : '0'}} comments</div>
       </li>
     </ul>
