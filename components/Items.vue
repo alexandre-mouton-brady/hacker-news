@@ -2,7 +2,7 @@
   <div class="code">
     <ul class="list pa2">
       <li class="list__item f6" v-for="item in items" :key="item.id">
-        <div class="score">{{item.score}}</div>
+        <div class="score b f4">{{item.score}}</div>
         <div class="title">
           <span>{{item.title}}</span>
           <template v-if="item.url">
@@ -10,7 +10,7 @@
           </template>
          </div>
         <div class="details">by <nuxt-link :to="'/user/' + item.by">{{item.by}}</nuxt-link> - <span class="ma0 i f7">{{item.time | timeSince}} ago</span></div>
-        <div class="comments">{{item.descendants ? item.descendants : '0'}} comments</div>
+        <div class="comments"><nuxt-link :to="'/item/' + item.id">{{item.descendants ? item.descendants : '0'}} comments</nuxt-link></div>
       </li>
     </ul>
   </div>
@@ -29,6 +29,10 @@ export default {
   display: grid;
   grid: repeat(4, 1.5em) / repeat(10, 1fr);
   grid-row-gap: 1em;
+}
+
+.list__item:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .score {

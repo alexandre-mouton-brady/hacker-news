@@ -1,6 +1,7 @@
 <template>
   <div class="pa4 code">
-    {{ user.id }} has been a user for {{ user.created | timeSince }}
+    <p>{{ user.id }} has been a user for {{ user.created | timeSince }}</p>
+    <p>Karma count: {{ user.karma }}</p>
   </div>
 </template>
 
