@@ -1,11 +1,16 @@
 <template>
   <div class="code">
     <ul class="list pa2">
-      <li class="list__item" v-for="item in items" :key="item.id">
+      <li class="list__item f6" v-for="item in items" :key="item.id">
         <div class="score">{{item.score}}</div>
-        <div class="title">{{item.title}}</div>
-        <div class="details">by {{item.by}} - {{item.time | timeSince}} ago</div>
-        <div class="comments">{{item.descendants}} comments</div>
+        <div class="title">
+          <span>{{item.title}}</span>
+          <template v-if="item.url">
+             - <a class="f7" :href="item.url">{{ item.url | hostname }}</a>
+          </template>
+         </div>
+        <div class="details">by {{item.by}} - <span class="ma0 i f7">{{item.time | timeSince}} ago</span></div>
+        <div class="comments">{{item.descendants ? item.descendants : '0'}} comments</div>
       </li>
     </ul>
   </div>
