@@ -30,6 +30,7 @@ module.exports = {
   },
   mode: 'spa',
   router: {
+    base: '/hacker-news/',
     linkExactActiveClass: 'link__active'
   }
 }
