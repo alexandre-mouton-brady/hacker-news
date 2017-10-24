@@ -25,10 +25,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['axios']
+    vendor: ['axios'],
+    publicPath: 'https://alexandre-mouton-brady.github.io/hacker-news/_nuxt/'
   },
   mode: 'spa',
-  publicPath: 'https://alexandre-mouton-brady.github.io/hacker-news/_nuxt/',
   router: {
     linkExactActiveClass: 'link__active'
   }
