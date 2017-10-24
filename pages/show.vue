@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h1>Show stories</h1>
-
     <Items />
   </div>
 </template>
