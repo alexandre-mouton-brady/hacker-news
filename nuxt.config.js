@@ -26,7 +26,7 @@ module.exports = {
   */
   build: {
     vendor: ['axios'],
-    publicPath: 'https://alexandre-mouton-brady.github.io/hacker-news/_nuxt/'
+    publicPath: 'https://alexandre-mouton-brady.github.io/hacker-news/'
   },
   mode: 'spa',
   router: {
