@@ -27,6 +27,7 @@ module.exports = {
   build: {
     vendor: ['axios']
   },
+  mode: 'spa',
   router: {
     linkExactActiveClass: 'link__active'
   }
