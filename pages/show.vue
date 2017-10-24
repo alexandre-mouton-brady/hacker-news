@@ -1,8 +1,9 @@
 <template>
- <div>
-   <h1>Top stories</h1>
-   <Items />
- </div>
+  <div>
+    <h1>Show stories</h1>
+
+    <Items />
+  </div>
 </template>
 
 <script>
@@ -13,7 +14,7 @@ export default {
     Items
   },
   async fetch({ store }) {
-    await store.dispatch('LOAD_ITEMS', 'topstories.json')
+    await store.dispatch('LOAD_ITEMS', 'showstories.json')
   }
 }
 </script>
